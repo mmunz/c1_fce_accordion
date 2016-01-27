@@ -1,0 +1,24 @@
+[GLOBAL]
+
+plugin.tx_c1fceaccordion{
+	view {
+		label = Accordion
+		extensionKey = c1_fce_accordion
+		partialRootPath = {$plugin.tx_c1fceaccordion.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_c1fceaccordion.view.layoutRootPath}
+	}
+    settings {
+        classes {
+            panel = {$plugin.tx_c1fceaccordion.settings.classes.panel}
+            panelHeading = {$plugin.tx_c1fceaccordion.settings.classes.panelHeading}
+            panelTitle = {$plugin.tx_c1fceaccordion.settings.classes.panelTitle}
+            panelBody = {$plugin.tx_c1fceaccordion.settings.classes.panelBody}
+            panelCollapse = {$plugin.tx_c1fceaccordion.settings.classes.panelCollapse}
+            accordionToggle = {$plugin.tx_c1fceaccordion.settings.classes.accordionToggle}
+            panelGroup = {$plugin.tx_c1fceaccordion.settings.classes.panelGroup}
+        }
+        tags {
+            panelTitle = {$plugin.tx_c1fceaccordion.settings.tags.panelTitle}
+        }
+    }
+}

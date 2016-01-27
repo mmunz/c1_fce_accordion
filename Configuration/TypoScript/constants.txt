@@ -1,0 +1,31 @@
+plugin.tx_c1fceaccordion{
+	view {
+		label = Accordion
+		extensionKey = c1_fce_accordion
+		partialRootPath = EXT:flux/Resources/Private/Partials/
+		layoutRootPath = EXT:fluidcontent/Resources/Private/Layouts/
+	}
+    settings {
+        classes {
+            # bootstrap3
+#            panel = panel panel-default
+#            panelHeading = panel-heading
+#            panelTitle = panel-title
+#            panelBody = panel-body
+#            panelGroup = accordion panel-group
+#            panelCollapse = panel-collapse collapse
+#            accordionToggle = accordion-toggle
+            # bootstrap4
+            panel = card panel
+            panelHeading = card-header
+            panelTitle =
+            panelBody =
+            panelGroup = accordion
+            panelCollapse = card-block panel-collapse collapse
+            accordionToggle = accordion-toggle
+        }
+        tags {
+            panelTitle = div
+        }
+    }
+}

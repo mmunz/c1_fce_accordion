@@ -1,0 +1,2 @@
+Icon sources:
+Accordion: https://github.com/neuedaten/content_element_icons

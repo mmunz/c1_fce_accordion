@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2015-10-05T13:07:00Z" product-name="c1_fsc_accordion">
+        <header/>
+        <body>
+            <trans-unit id="flux.accordion" xml:space="preserve">
+                <source>Accordion</source>
+            </trans-unit>
+            <trans-unit id="flux.accordion.description" xml:space="preserve">
+                <source>Accordion with a variable amount of panels.</source>
+            </trans-unit>
+            <trans-unit id="flux.accordion.sections.panels" xml:space="preserve">
+                <source>Panels</source>
+            </trans-unit>
+            <trans-unit id="flux.accordion.objects.panel" xml:space="preserve">
+                <source>Panel</source>
+            </trans-unit>
+            <trans-unit id="flux.accordion.objects.panel.title" xml:space="preserve">
+                <source>Panel Title</source>
+            </trans-unit>
+            <trans-unit id="flux.accordion.objects.panel.active" xml:space="preserve">
+                <source>Panel opened at page load</source>
+            </trans-unit>
+            <trans-unit id="flux.accordion.columns.column" xml:space="preserve">
+                <source>Column</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

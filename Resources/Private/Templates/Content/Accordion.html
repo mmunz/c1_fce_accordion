@@ -1,0 +1,53 @@
+{namespace flux=FluidTYPO3\Flux\ViewHelpers}
+
+<f:layout name="Content" />
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:flux="http://fedext.net/ns/flux/ViewHelpers"
+     xmlns:v="http://fedext.net/ns/vhs/ViewHelpers"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+    <f:section name="Configuration">
+        <flux:form wizardTab="Bootstrap" id="accordion" icon="{f:uri.resource(path: 'Icons/Accordion.svg')}">
+            <flux:form.section name="panels">
+                <flux:form.object name="panel">
+                    <flux:field.input name="title" />
+                    <flux:field.checkbox name="active" />
+                </flux:form.object>
+            </flux:form.section>
+            <flux:grid>
+                <f:for each="{panels}" as="panel" iteration="iteration">
+                    <flux:grid.row>
+                        <flux:grid.column name="content.{iteration.index}" label="{f:if(condition: panel.panel.title, then: panel.panel.title, else: 'Content, panel {iteration.cycle}')}" />
+                    </flux:grid.row>
+                </f:for>
+            </flux:grid>
+        </flux:form>
+    </f:section>
+
+    <f:section name="Preview">
+        <b><p><strong><f:translate key="flux.accordion" /></strong></p></b>
+        <flux:widget.grid />
+    </f:section>
+
+    <f:section name="Main">
+        <div class="{settings.classes.panelGroup}" id="accordion-{record.uid}" role="tablist">
+            <f:for each="{panels}" as="panel" iteration="iteration">
+                <div class="{settings.classes.panel}">
+                    <div class="{settings.classes.panelHeading}">
+                        <{settings.tags.panelTitle} class="{settings.classes.panelTitle}">
+                            <a class="{settings.classes.accordionToggle}{f:if(condition: panel.panel.active, then: '', else: ' collapsed')}" data-toggle="collapse" data-parent="#accordion-{record.uid}"
+                               href="#panel-{record.uid}-{iteration.index}">
+                                {panel.panel.title}
+                            </a>
+                        </{settings.tags.panelTitle}>
+                    </div>
+                    <div id="panel-{record.uid}-{iteration.index}" class="{settings.classes.panelCollapse}{f:if(condition: panel.panel.active, then: ' in')}"{f:if(condition: panel.panel.active, then: ' aria-expanded="true"')}>
+                        <div class="{settings.classes.panelBody}">
+                            <flux:content.render area="content.{iteration.index}" />
+                        </div>
+                    </div>
+                </div>
+            </f:for>
+        </div>
+    </f:section>
+</div>

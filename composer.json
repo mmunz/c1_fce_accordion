@@ -1,0 +1,26 @@
+{
+    "name": "c1/c1-fce-accordion",
+    "type": "typo3-cms-extension",
+    "version": "0.0.1",
+    "description": "Bootstrap Accordion using fluidcontent and flux,",
+    "keywords": [
+        "typo3",
+        "TYPO3 CMS",
+        "Accordion",
+        "Bootstrap"
+    ],
+    "homepage": "",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Manuel Munz",
+            "email": "t3dev@comuno.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms": "~7.6.0",
+        "typo3-ter/flux": "*",
+        "typo3-ter/fluidcontent": "*"
+    }
+}
