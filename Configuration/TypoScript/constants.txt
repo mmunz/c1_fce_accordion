@@ -3,7 +3,8 @@ plugin.tx_c1fceaccordion{
 		label = Accordion
 		extensionKey = c1_fce_accordion
 		partialRootPath = EXT:flux/Resources/Private/Partials/
-		layoutRootPath = EXT:fluidcontent/Resources/Private/Layouts/
+        templateRootPath = EXT:c1_fce_accordion/Resources/Private/Templates/
+        layoutRootPath = EXT:fluidcontent/Resources/Private/Layouts/
 	}
     settings {
         classes {
