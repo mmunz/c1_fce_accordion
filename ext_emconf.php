@@ -13,7 +13,6 @@ $EM_CONF[$_EXTKEY] = array(
 		'depends' => array(
 			'core' => '7.5.0-7.6.99',
 			'flux' => '',
-			'fluidcontent' => '',
 		),
 	),
 );

@@ -20,7 +20,6 @@
     ],
     "require": {
         "typo3/cms": "~7.6.0",
-        "typo3-ter/flux": "*",
-        "typo3-ter/fluidcontent": "*"
+        "typo3-ter/flux": "*"
     }
 }
