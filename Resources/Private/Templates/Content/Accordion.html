@@ -7,7 +7,7 @@
      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
 
     <f:section name="Configuration">
-        <flux:form wizardTab="Bootstrap" id="accordion" icon="{f:uri.resource(path: 'Icons/Accordion.svg')}">
+        <flux:form options="{group: 'Bootstrap', icon: 'Icons/Accordion.svg'}" id="accordion">
             <flux:form.section name="panels">
                 <flux:form.object name="panel">
                     <flux:field.input name="title" />
@@ -26,7 +26,6 @@
 
     <f:section name="Preview">
         <b><p><strong><f:translate key="flux.accordion" /></strong></p></b>
-        <flux:widget.grid />
     </f:section>
 
     <f:section name="Main">
